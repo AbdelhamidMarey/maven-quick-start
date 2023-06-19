@@ -1,4 +1,5 @@
 package clinic.programming.training;
+import org.apache.commons.lang3.StringUtils;
 
 public class Application {
     
@@ -17,5 +18,7 @@ public class Application {
 	default -> 1;
 	};
 	System.out.println (i);
+	String s2 = "I am the king";
+	String[] sAr = StringUtils.split(s2, " ");
     }
 }
