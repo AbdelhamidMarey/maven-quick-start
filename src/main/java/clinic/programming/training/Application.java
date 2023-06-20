@@ -6,6 +6,11 @@ public class Application {
     public Application() {
         System.out.println ("Inside Application");
     }
+    
+    public int countWords(String s) {
+	String[] sAr = StringUtils.split(s, " ");
+	return sAr == null ? 0 : sAr.length;
+    }
 
     // method main(): ALWAYS the APPLICATION entry point
     public static void main (String[] args) {
@@ -19,6 +24,6 @@ public class Application {
 	};
 	System.out.println (i);
 	String s2 = "I am the king";
-	String[] sAr = StringUtils.split(s2, " ");
+	System.out.println(app.countWords(s2));
     }
 }
